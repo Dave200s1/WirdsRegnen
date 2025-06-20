@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Wetter App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Wetter App</h1>
+        
+        <div class="search-box">
+            <input 
+                type="text" 
+                class="search-input" 
+                placeholder="Stadt eingeben..."
+                id="city-input"
+            >
+            <button class="search-btn" id="search-btn">🔍</button>
+        </div>
+        
+        <div class="weather-data" id="weather-data">
+            <h2 class="city-name" id="city-name">Berlin, DE</h2>
+            <div class="temperature" id="temperature">18°C</div>
+            <img class="weather-icon" id="weather-icon" src="" alt="Wetter Icon">
+            <div class="weather-description" id="weather-description">Bewölkt</div>
+            
+            <div class="details">
+                <div class="detail-item">
+                    <span>Gefühlt</span>
+                    <div id="feels-like">17°C</div>
+                </div>
+                <div class="detail-item">
+                    <span>Luftfeuchtigkeit</span>
+                    <div id="humidity">65%</div>
+                </div>
+                <div class="detail-item">
+                    <span>Wind</span>
+                    <div id="wind">5 km/h</div>
+                </div>
+                <div class="detail-item">
+                    <span>Druck</span>
+                    <div id="pressure">1015 hPa</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="error-message" id="error-message">
+            Stadt nicht gefunden. Bitte versuche es erneut.
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
